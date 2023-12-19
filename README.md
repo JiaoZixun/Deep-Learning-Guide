@@ -19,7 +19,7 @@ trick部分汇总近期前沿论文提出的新方法（即插即用模块）
 论文：https://arxiv.org/abs/1512.03385  
 官方代码：https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py  
 结构图:  
-![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)  
+[![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)](https://github.com/JiaoZixun/Deep-Learning-Guide/blob/main/others/img_resnet/resnet01.jpg)  
 要点:  
 ``` python
                                         # torch.Size([2, 3, 256, 256])
@@ -58,7 +58,7 @@ self.fc = nn.Linear(512 * block.expansion, num_classes)
 论文：https://arxiv.org/abs/2105.15203  
 官方代码：https://github.com/NVlabs/SegFormer  
 结构图:  
-![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_segformer/segformer.jpg)  
+[![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_segformer/segformer.jpg)  ](https://github.com/JiaoZixun/Deep-Learning-Guide/blob/main/others/img_segformer/segformer.jpg)  
 要点:  
 ``` python
 # MixVisionTransformer类对图像进行下采样，然后送入transformer得到多头注意力的权重，再重新合并为图像、
