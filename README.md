@@ -14,7 +14,7 @@ trick部分汇总近期前沿论文提出的新方法（即插即用模块）
 
 ## backbone
 
-1. resnet  
+### 1. resnet  
 1）resnet  
 论文：  
 结构图：  
@@ -44,7 +44,7 @@ self.layer2 = self._make_layer(block, 128, layers[1], stride=2) # 通过这个�
 ```
 self.fc = nn.Linear(512 * block.expansion, num_classes)
 ```
-2. transformer  
+### 2. transformer  
 1） segformer   
 论文：  
 结构图：  
