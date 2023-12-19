@@ -16,11 +16,11 @@ trick部分汇总近期前沿论文提出的新方法（即插即用模块）
 
 ### 1. resnet  
 1）resnet  
-论文：https://arxiv.org/abs/1512.03385
-官方代码：https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py
-结构图： 
-![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)   
-要点：  
+论文：https://arxiv.org/abs/1512.03385  
+官方代码：https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py  
+结构图:  
+![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)  
+要点:  
 ``` python
                                         # torch.Size([2, 3, 256, 256])
 x = self.conv1(x)                       # torch.Size([2, 64, 128, 128])
@@ -36,7 +36,7 @@ x = x.view(x.size(0), -1)               # torch.Size([2, 2048])
 x = self.fc(x)                          # torch.Size([2, 1000])
 return x
 ```
-使用指南：
+使用指南:  
 1. 先运行check_model.py 可以看到每一层输出的大小，输入都是三通道256*256大小的tensor  
 resnet50经过四层从64通道增加到2048通道
 ```
@@ -46,20 +46,20 @@ self.layer2 = self._make_layer(block, 128, layers[1], stride=2) # 通过这个�
 ```
 self.fc = nn.Linear(512 * block.expansion, num_classes)
 ```  
-2） Unet
-论文：  
-官方代码：
-结构图： 
-要点：  
-使用指南：  
+2） Unet  
+论文:  
+官方代码:  
+结构图:  
+要点:  
+使用指南:  
 
 ### 2. transformer  
-1） segformer   
+1） segformer  
 论文：https://arxiv.org/abs/2105.15203  
 官方代码：https://github.com/NVlabs/SegFormer  
-结构图：
+结构图:  
 ![image-20231219221855950](/root/autodl-tmp/deep-learning-guide/others/img_segformer/segformer.jpg)  
-要点：  
+要点:  
 ``` python
 # MixVisionTransformer类对图像进行下采样，然后送入transformer得到多头注意力的权重，再重新合并为图像、
 # block1：256, 256, 3 => 64, 64, 32  => 4096, 32 => (transformer) 4096, 32
