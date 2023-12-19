@@ -19,7 +19,7 @@ trick部分汇总近期前沿论文提出的新方法（即插即用模块）
 论文：https://arxiv.org/abs/1512.03385  
 官方代码：https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py  
 结构图:  
-[![rresnet](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)](https://github.com/JiaoZixun/Deep-Learning-Guide/blob/main/others/img_resnet/resnet01.jpg)  
+[![resnet](/root/autodl-tmp/deep-learning-guide/others/img_resnet/resnet01.jpg)](https://github.com/JiaoZixun/Deep-Learning-Guide/blob/main/others/img_resnet/resnet01.jpg)  
 要点:  
 ``` python
                                         # torch.Size([2, 3, 256, 256])
